@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoBici - Pases</title>
+    <!--kit de fontawesome-logo WAP-->
+    <script src="https://kit.fontawesome.com/3dfdaafc59.js" crossorigin="anonymous"></script>
+    <!--hoja de stylos propia-se linkea la pagina de estilos al html usando "link"-->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <!--favicon-icono page-->
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    </head>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md bg-body-tertiary px-5 py-2">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarToggler" style="margin-top: 10px;">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="../assets/img/logo.png" width="100" alt="EcoBici">
+                    </a>
+                    <ul class="navbar-nav d-flex justify-content-center align-items-e">
+                        <li class="nav-item cursor-pointer">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="analisis_datos.html">Analisis de Datos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Equipo.html">Quienes Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Consultas.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-green" href="#venta">Comprar Pases</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="bajar-margin" id="main-pases">
+        <div class="row">
+        <div class="col-md-6 col-lg-6 order-md-first order-lg-first">
+            <article>
+                <h2 class="text-center" style="margin-bottom: 20px;">Encontra las estaciones de EcoBici</h2>
+                <img src="../assets/img/mapa_ecobici.png" alt="Mapa EcoBici" width="68%" id="imagen-estaciones">
+            </article>
+        </div>
+        <div class="col-md-6 col-lg-6 order-md-last order-lg-last" style="padding-right: 50px;">
+        <section id="venta">
+            <div class="container">
+        <h2 class="text-center" style="margin-bottom: 20px;">¡Adquiri tu pase!</h2>
+        <h4 class="text-center">Aprovecha las promociones y descuentos</h4>
+            <div class="cards nav justify-content-center">    
+                <div class="p-3 mr-1 ml-1 text-center border bg-none border-primary">
+                    <p class="h5">Ciclista Frecuente</p>
+                    <p class="h6">Tienen un descuento</p>
+                    <p class="h4">61%</p>
+                    <small>* presentar documentación</small>
+                </div>
+                <div class="p-3 mr-1 ml-1 text-center border bg-none border-info">
+                    <p class="h5">Turista</p>
+                    <p class="h6">Tienen un descuento</p>
+                    <p class="h4">30%</p>
+                    <small>* presentar documentación</small>
+                </div>
+                <div class="p-3 mr-1 ml-1 text-center border bg-none border-warning">
+                    <p class="h5">GRATIS</p>
+                <p class="h6">*Pedaleá de Lunes a Viernes.<br>*4 viajes de 30 minutos c/u.</p>
+                <p class="h4">SIN COSTO! </p>
+                <small>*Todos los pase se renuevan automaticamente. <a href="#info">más info</a></small>
+            </div>
+        </div>
+        </section>
+        <div class="venta container-fuid text-center p-1">
+            <span>VENTA</span><br>
+            <span class="h3">VALOR DEL TICKET $1000</span>
+        </div>
+        
+            <form>
+                <div class="form-row justify-content-center">
+                    <div class="form-group col-md-3">
+                        <input type="text" class="form-control" id="nombre" placeholder="Nombre" requerid>
+                    </div>
+                    <div class="validation">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <input type="text" class="form-control" id="apellido" placeholder="Apellido" requerid>
+                    </div>
+                    <div class="validation">
+                    </div>
+                </div>
+                <div class="form-row justify-content-center">
+                    <div class="form-group col-md-6">
+                        <input type="email" class="form-control" id="email" placeholder="Correo" requerid>
+                    </div>
+                </div>
+                <div class="form-row justify-content-center">
+                <div class="form-group col-md-3">
+                        <label>Cantidad de pases</label>
+                        <input type="number" class="form-control text-right" id="cantidad" min="1" max="365"
+                            placeholder="Cantidad" required>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label>Categoría</label>
+                        <select class="form-control" id="categoria">
+                            <option selected value="sinDesc">Selecciona una categoría</option>
+                            <option value="ciclista"> <b>-----Ciclista Frecuente-----</b></option>
+                            <option value="ciclista">Ciclista x dia</option>
+                            <option value="ciclista1m">Ciclista x 1 mes</option>
+                            <option value="ciclista1a">Ciclista x 1 año</option>
+                            <option value="turista"> <b>-----Turista-----</b></option>
+                            <option value="turistaU">Turista pase único</option>
+                            <option value="turista1d">Turista pase por 1 dia</option>
+                            <option value="turista3d">Turista pase por 3 dias</option>
+                            <option value="turista7d">Turista pase por 7 dias</option>
+                            <option value="turista"> <b>-----Gratuitos-----</b></option>
+                            <option value="free">Gratis - Consultas en Términos y Condiciones</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row justify-content-center">
+                    <div class="form-group col-md-6">
+                        <div class="alert alert-primary" role="alert">Total a pagar: $
+                            <span class="precio h4"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-cols-auto justify-content-center align-items-center gx-2 d-flex" style="margin-bottom: 20px;">
+                    <div class="col">
+                        <a href="https://help.tembici.com/hc/es-419/articles/4499016101268-T%C3%A9rminos-y-condiciones" style="text-decoration: none;" target="_blank"><h6><input type="checkbox" required>  Aceptar bases y condiciones</h6></a></div>
+                </div>
+                <div class="form-row justify-content-center">
+                    <div class="form-group col-md-3 justify-content-center">
+                        <button type="reset" class="btn btn-success btn-sm container bg-lima br-lima" id="borrar">
+                            Borrar
+                        </button>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <button type="button" class="btn btn-success btn-sm container bg-lima br-lima" id="resumen">
+                            Reservar pase
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+        
+       
+        </main>
+        <footer id="pie-de-pagina">
+            <div class="container-fluid">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-4 text-center">
+                        <img src="../assets/img/logo.png" alt="EcoBici" style="width: 80px; margin-bottom: 15px; margin-top: 10px;">
+                        <p>Vivamos la ciudad verde</p>
+                    </div>
+                    <div class="col-4">
+                        <b>Seguinos en nuestras redes:</b>
+                        <br>
+                        <ul>
+                            <li><a href="https://www.facebook.com/baecobici" target="_blank"><i class="fa-brands fa-facebook fa-lg"></i>  Facebook</a></li>
+                            <li><a href="https://www.instagram.com/baecobici/" target="_blank"><i class="fa-brands fa-instagram fa-lg"></i>  Instragram</a></li>
+                            <li><a href="https://api.whatsapp.com/send?phone=5491150500147&amp;&amp;text=ecobici&amp;&amp;source=&amp;&amp;data="
+                                    target="_blank"><i class="fa-brands fa-whatsapp fa-lg"></i>  Whatsapp</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-4">
+                        <ul>
+                            <li><a class="nav-link" href="../pages/Consultas.html"><i class="fa-solid fa-question fa-lg"></i>  Preguntas frecuentes</a></li>
+                            <li><a class="nav-link" href="../pages/Consultas.html#formulario"><i class="fa-regular fa-message fa-lg"></i>  Contactanos</a></li>
+                            <li><a class="nav-link" href="https://buenosaires.gob.ar/ecobici/sistemaecobici" target="_blank"><i class="fa-regular fa-newspaper fa-lg"></i>  Prensa</a></li>
+                            <li><a class="nav-link" href="../pages/Equipo.html"><i class="fa-solid fa-people-group fa-lg"></i>  Conocenos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row text-center" id="derechosyautor">
+                    <h6>Sitio web desarrollado por: <b>Grupo 10</b></h6>
+                </div>
+            </div>
+        </footer>
+<!--Bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script> 
+<!--- Librería Sweet Alert (Personaliza las alertas => https://sweetalert2.github.io/ --->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!--- Importa tickets.js --->
+<script src="../js/main.js"></script>
+
+</body>
+</html>
